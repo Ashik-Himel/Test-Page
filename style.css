@@ -31,7 +31,7 @@ img {max-width: 100%;}
 .section-description {color: var(--text-color); text-align: justify; line-height: 1.5; margin-bottom: 1.5rem;}
 
 /* Navigation Area */
-.navigation-area {border-bottom: 2px solid var(--primary-color); display: flex; justify-content: space-between; align-items: center; padding: 1rem 5rem; background-color: white;}
+.navigation-area {border-bottom: 2px solid var(--primary-color); display: flex; justify-content: space-between; align-items: center; padding: 1rem 5rem; background-color: white; position: sticky; top: 0; z-index: 1;}
 .navigation-area .site-logo {max-width: 180px;}
 .navigation {display: flex; align-items: center; gap: 2rem;}
 .navigation a {color: black; transition: color 0.3s ease;}
