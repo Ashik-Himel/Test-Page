@@ -111,5 +111,6 @@ textarea {resize: none;}
     .contact-me {flex-direction: column;}
     .footerWidgets {flex-basis: 100%; margin-bottom: 1.5rem;}
     .copyRightText {flex-direction: column;}
-    .copyRightText div {padding: 1.5rem 0;}
+    .copyRightText div {padding: 1.5rem 0; text-align: center;}
+    .copyRightText div a {display: block;}
 }
