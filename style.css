@@ -24,11 +24,12 @@ img {max-width: 100%;}
 .btn-center {position: relative; left: 50%; transform: translateX(-50%);}
 .site-logo {cursor: pointer;}
 .container {width: 80%; margin: 0 auto;}
-.section-area {margin-top: 3rem; margin-bottom: 2rem;}
 .section-title {font-size: 2rem; text-transform: uppercase; margin-bottom: 1rem; position: relative; display: inline-block; left: 50%; transform: translateX(-50%);}
 .section-title::after {content: ""; display: block; height: 3px; width: 50%; background-color: var(--primary-color); position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%);}
 .section-title span {color: var(--primary-color);}
 .section-description {color: var(--text-color); text-align: justify; line-height: 1.5; margin-bottom: 1.5rem;}
+.sticky-problem {margin-bottom: -5rem; padding: 5rem 0;}
+.menu-bar {display: none;}
 
 /* Navigation Area */
 .navigation-area {border-bottom: 2px solid var(--primary-color); display: flex; justify-content: space-between; align-items: center; padding: 1rem 5rem; background-color: white; position: sticky; top: 0; z-index: 1;}
@@ -52,11 +53,12 @@ img {max-width: 100%;}
 .blog-grid-section .btn-center {margin-top: 2rem;}
 
 /* About Me */
-.about-us-area {background-color: rgb(243, 243, 243); padding: 2.5rem 0;}
+.about-us-area {background-color: rgb(243, 243, 243); margin-top: 3rem;}
 .about-me {display: flex; justify-content: space-between; align-items: center; gap: 2rem; margin-top: 2rem;}
 .about-me > div {flex: 1;}
 
 /* Contact Us */
+.contact-us-section {margin-top: 3rem;}
 .contact-me {display: flex; justify-content: space-between; align-items: center; gap: 2rem; margin-top: 2rem;}
 .contact-me > div {flex: 1;}
 .social-links {display: flex; justify-content: center; align-items: center; gap: 2.5rem; font-size: 1.5rem;}
@@ -73,7 +75,7 @@ textarea {resize: none;}
 :focus {outline: none;}
 ::placeholder {font-family: "Poppins Regular"; font-size: 1rem;}
 
-.footer-area {background-color: #3e3e3e; color: white; padding-top: 50px}
+.footer-area {background-color: #3e3e3e; color: white; padding-top: 50px; margin-bottom: 0 !important; margin-top: 3rem;}
 .footerMain {display: flex; justify-content: space-between; align-items: flex-start;}
 .footerWidgets h3 {margin-bottom: 10px;}
 .footerWidgets [href] {display: block; color: white; line-height: 34px; transition: color 0.3s;}
@@ -87,3 +89,26 @@ textarea {resize: none;}
 .copyRightText div p {color: white;}
 .copyRightText div p a {color: var(--primary-color); text-decoration: none; font-weight: bold; transition: color 0.3s ease;}
 .copyRightText div p a:hover {color: var(--secondary-color);}
+
+@media screen and (max-width: 768px) {
+    .navigation {display: block; background-color: white; z-index: 1; position: fixed; width: 60vw; height: 110vh; top: 0; left: -100%; padding: 5rem; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.432); transition: left 0.5s ease;}
+    .navigation li {line-height: 3;}
+    .nav-link {color: black; background-color: white; padding: 0;}
+    .show-menu {left: 0;}
+    .menu-bar {display: block; font-size: 1.5rem;}
+    .grid-area {grid-template-columns: repeat(2, 1fr);}
+    .footerMain {flex-wrap: wrap;}
+    .footerWidgets {width: 50%; margin-bottom: 3rem;}
+}
+
+@media screen and (max-width: 600px) {
+    html {font-size: 13px;}
+    .navigation-area {padding: 20px 40px !important;}
+    .site-logo {max-width: 120px !important;}
+    .hero-section .container {flex-direction: column;}
+    .grid-area {grid-template-columns: 1fr;}
+    .about-me {flex-direction: column-reverse;}
+    .contact-me {flex-direction: column;}
+    .footerWidgets {flex-basis: 100%; margin-bottom: 1.5rem;}
+    .copyRightText {flex-direction: column;}
+}
