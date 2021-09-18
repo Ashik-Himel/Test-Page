@@ -93,7 +93,7 @@ textarea {resize: none;}
 @media screen and (max-width: 768px) {
     .navigation {display: block; background-color: white; z-index: 1; position: fixed; width: 60vw; height: 110vh; top: 0; left: -100%; padding: 5rem; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.432); transition: left 0.5s ease;}
     .navigation li {line-height: 3;}
-    .nav-link {color: black; background-color: white; padding: 0;}
+    .nav-link {color: black !important; background-color: white !important; padding: 0 !important;}
     .show-menu {left: 0;}
     .menu-bar {display: block; font-size: 1.5rem;}
     .grid-area {grid-template-columns: repeat(2, 1fr);}
@@ -102,7 +102,7 @@ textarea {resize: none;}
 }
 
 @media screen and (max-width: 600px) {
-    html {font-size: 13px;}
+    html {font-size: 14px;}
     .navigation-area {padding: 20px 40px !important;}
     .site-logo {max-width: 120px !important;}
     .hero-section .container {flex-direction: column;}
@@ -111,4 +111,5 @@ textarea {resize: none;}
     .contact-me {flex-direction: column;}
     .footerWidgets {flex-basis: 100%; margin-bottom: 1.5rem;}
     .copyRightText {flex-direction: column;}
+    .copyRightText div {padding: 1.5rem 0;}
 }
